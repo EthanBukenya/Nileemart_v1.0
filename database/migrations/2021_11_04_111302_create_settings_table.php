@@ -13,20 +13,22 @@ class CreateSettingssTable extends Migration
      */
     public function up()
     {
-        Schema::create('settings', function (Blueprint $table) {
-            $table->id();
-            $table->string('email');
-            $table->string('phone');
-            $table->string('phone2');
-            $table->string('address');
-            $table->string('map');
-            $table->string('twitter');
-            $table->string('facebook');
-            $table->string('pinterest');
-            $table->string('instagram');
-            $table->string('youtube');
-            $table->timestamps();
-        });
+        if(!Schema::hasTable('settings')){
+            Schema::create('settings', function (Blueprint $table) {
+                $table->id();
+                $table->string('email');
+                $table->string('phone');
+                $table->string('phone2');
+                $table->string('address');
+                $table->string('map');
+                $table->string('twitter');
+                $table->string('facebook');
+                $table->string('pinterest');
+                $table->string('instagram');
+                $table->string('youtube');
+                $table->timestamps();
+            });
+        }
     }
 
     /**
