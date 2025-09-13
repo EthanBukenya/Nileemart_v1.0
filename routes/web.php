@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Admin\AdminAddCategoryComponent;
 use App\Http\Livewire\Admin\AdminAddCouponComponent;
 use App\Http\Livewire\Admin\AdminAddHomeSliderComponent;
@@ -34,7 +35,7 @@ use App\Http\Livewire\User\UserOrderDetailsComponent;
 use App\Http\Livewire\User\UserOrdersComponent;
 use App\Http\Livewire\User\UserReviewComponent;
 use App\Http\Livewire\WishlistComponent;
-use Illuminate\Support\Facades\Route;
+
 
 use App\Http\Livewire\AncientComponent;
 use App\Http\Livewire\AuctionsComponent;
@@ -61,7 +62,7 @@ Route::get('/', HomeComponent::class)->name('home');
 Route::get('/shop', ShopComponent::class)->name('shop');
 Route::get('/cart', CartComponent::class)->name('product.cart');
 Route::get('/checkout', CheckoutComponent::class)->name('checkout');
-Route::get('/products/{slug}', DetailsComponent::class)->name('product.details');
+//Route::get('/products/{slug}', DetailsComponent::class)->name('product.details');
 Route::get('/product-category/{category_slug}', CategoryComponent::class)->name('product.category');
 Route::get('/search', SearchComponent::class)->name('product.search');
 Route::get('/wishlist', WishlistComponent::class)->name('wishlist');
@@ -69,7 +70,8 @@ Route::get('/thank-you',ThankyouComponent::class)->name('thankyou');
 Route::get('/contact-us',ContactComponent::class)->name('contact');
 
 //to_be-Deleted
-Route::get('/detail', DetailsComponent::class)->name('detail');
+//Route::get('/detail', DetailsComponent::class)->name('detail');
+//Route::get('products/{slug}', DetailsComponent::class)->name('product.details');
 
 //added page routes
 Route::get('/ancient', AncientComponent::class);
