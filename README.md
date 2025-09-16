@@ -6,7 +6,7 @@
 [![Jetstream](https://img.shields.io/badge/Jetstream-2.3+-green.svg)](https://jetstream.laravel.com/)
 [![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](#license)
 
-A fully-featured single vendor ecommerce platform built with Laravel 8, specifically designed for fresh market grocery sales in Uganda. Features modern UI/UX with Livewire components, secure payment processing with Stripe, and comprehensive order management.
+A fully-featured single vendor ecommerce platform built with Laravel 8, designed for fresh market grocery sales in Uganda. Features modern UI/UX with Livewire components, secure payment processing with Stripe, and comprehensive order management.
 
 ## 📋 Table of Contents
 
